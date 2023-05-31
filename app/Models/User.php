@@ -38,4 +38,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+
+	/**
+	 * The attributes that should be hidden for arrays.
+	 * 
+	 * @return array
+	 */
+	public function getHidden() {
+		return $this->hidden;
+	}
 }
